@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#logo {
+    height: 5rem;
+    position: relative;
+}
+
+#navbar {
+    padding: 0px 50px;
+}
+
+#navbar > div {
+    margin-right: 100px;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.hero-container {
+    padding: 50px;
+    background-color: #ee2830;
+}
+
+.hero-heading {
+    text-align: center;
+    color: #fff;
+}
+
