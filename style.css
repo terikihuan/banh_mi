@@ -1,32 +1,156 @@
 html, body {
-    height: 100%;
     box-sizing: border-box;
+    background-color: #fffbd8;
+    font-size: 1.5vw;
+}
+
+.hero-section {
+    height: 100%;
+}
+
+.small-font {
+    font-size: calc(5px + 1vw);;
 }
 
 #logo {
-    height: 5rem;
+    width: 8vw;
+    min-width: 80px;
     position: relative;
 }
 
 #navbar {
     padding: 0px 50px;
+    background: #2a2a2a;
 }
 
-#navbar > div {
-    margin-right: 100px;
+.nav-link {
+    margin: 0px 25px;
 }
 
-.main {
-    margin-top: 100px;
-}
-
-.hero-container {
+.title-container {
     padding: 50px;
     background-color: #ee2830;
 }
 
-.hero-heading {
+.title-heading {
     text-align: center;
     color: #fff;
+}
+
+.hero-section {
+    display: flex;
+    padding-top: 18vh;
+    height: 100vh;
+}
+
+.hero-text {
+    padding-top: 8vh;
+    padding-left: 10vw;
+    padding-right: 5vw;
+    width: 50vw;
+    flex: 1;
+}
+
+.hero-header {
+    font-family: 'DM Serif Display';
+    font-size: 3vw;
+}
+
+.hero-text > p {
+    margin-top: 50px;
+}
+
+.hero-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#social-media {
+    margin-top: 5px;
+}
+
+#menu-btn {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid #2a2a2a;
+    border-radius: 20px;
+    background: transparent;
+    width: 15vw;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-media-icon {
+    width: 2vw;
+}
+
+#hero-img {
+    width: 45vw;
+    margin-left: 0vw;  
+    flex: 1;
+}
+
+.footer {
+    background-color: #2a2a2a;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+}
+
+.footer-container {
+    color: #8e8e8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 430px) {
+    .hero-section {
+        height: 100vh;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-img {
+        width: 50vw;
+        flex: 1;
+        padding: 0px;
+        margin-top: -10vh;
+    }
+    .hero-text {
+        padding: 0px;
+        width: 80vw;
+        font-size: 16px;
+        text-align: center;
+    }
+    .hero-header {
+        font-size: 6vw;
+    }
+    #menu-btn {
+        width: 120px;
+    }
+    #social-media {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .social-media-icon {
+        width: 25px;
+    }
+    .footer {
+        margin-top: 10px;
+    }
+    .small-font {
+        font-size: 11px;
+    }
 }
 
