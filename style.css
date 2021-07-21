@@ -1,35 +1,56 @@
+/* GENERAL STYLES */
+:root {
+    --sepia: #fffbd8;
+    --dark: #2a2a2a;
+    --lightgrey: #8e8e8e;
+    font-size: 21px;
+}
+
 html, body {
     box-sizing: border-box;
-    background-color: #fffbd8;
-    font-size: 1.5vw;
+    background-color: var(--sepia);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.hero-section {
-    height: 100%;
+main {
+    padding: 6vh 0;
 }
 
-.small-font {
-    font-size: calc(5px + 1vw);;
+.hero-banner {
+    height: 400px;
+    width: auto;
 }
 
+
+/* Navigation */
 #logo {
-    width: 8vw;
+    height: 6vh;
     min-width: 80px;
     position: relative;
 }
 
 #navbar {
     padding: 0px 50px;
-    background: #2a2a2a;
+    background: var(--dark);
 }
+
+#navbarSupportedContent > ul{
+    margin-left: auto;
+}
+
 
 .nav-link {
     margin: 0px 25px;
 }
 
+
+/* Page's title */
 .title-container {
-    padding: 50px;
-    background-color: #ee2830;
+    padding: 2em 0px;
+    background-color: #858585;
 }
 
 .title-heading {
@@ -37,27 +58,34 @@ html, body {
     color: #fff;
 }
 
+/* Hero section */
 .hero-section {
     display: flex;
-    padding-top: 18vh;
-    height: 100vh;
+    padding: 9vh 5vw;
+    height: auto;
+    justify-content: center;
 }
 
 .hero-text {
-    padding-top: 8vh;
-    padding-left: 10vw;
-    padding-right: 5vw;
-    width: 50vw;
-    flex: 1;
+    padding: 5vh 5vw 0vh 5vw;
+    width: 30em;
+    /* border: 2px solid red; */
 }
 
 .hero-header {
     font-family: 'DM Serif Display';
-    font-size: 3vw;
+    font-size: 2.5rem;
 }
 
-.hero-text > p {
-    margin-top: 50px;
+.hero-para {
+    margin-top: 5vh;
+    max-width: 400px;
+}
+
+#hero-img {
+    width: 45vw;
+    margin-left: 0vw;
+    max-width: 800px;
 }
 
 .hero-contact {
@@ -71,9 +99,9 @@ html, body {
 }
 
 #menu-btn {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 2px solid #2a2a2a;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    border: 2px solid var(--dark);
     border-radius: 20px;
     background: transparent;
     width: 15vw;
@@ -89,32 +117,33 @@ html, body {
     width: 2vw;
 }
 
-#hero-img {
-    width: 45vw;
-    margin-left: 0vw;  
-    flex: 1;
-}
 
+
+
+/* Page footer */
 .footer {
-    background-color: #2a2a2a;
+    background-color: var(--dark);
     height: auto;
     width: 100%;
     padding: 10px;
-    bottom: 0;
+    margin-top: auto;
 }
 
 .footer-container {
-    color: #8e8e8e;
+    color: var(--lightgrey);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-@media screen and (max-width: 430px) {
-    .hero-section {
-        height: 100vh;
-    }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 769px) {
+    :root {
+        font-size: 16px;
+    }
+    
     .hero-section {
         flex-direction: column-reverse;
         justify-content: center;
@@ -122,22 +151,31 @@ html, body {
     }
     #hero-img {
         width: 50vw;
+        min-width: 200px;
         flex: 1;
         padding: 0px;
-        margin-top: -10vh;
+        margin-top: -5vh;
     }
     .hero-text {
         padding: 0px;
         width: 80vw;
-        font-size: 16px;
+        font-size: 1rem;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .hero-header {
-        font-size: 6vw;
+        font-size: 2rem;
+    }
+    .hero-para {
+        max-width: 300px;
     }
     #menu-btn {
         width: 120px;
+        margin: 0vh;
     }
+
     #social-media {
         margin-top: 15px;
         justify-content: center;
@@ -146,11 +184,14 @@ html, body {
     .social-media-icon {
         width: 25px;
     }
-    .footer {
-        margin-top: 10px;
-    }
-    .small-font {
-        font-size: 11px;
+
+    .hero-banner {
+        height: 200px;
     }
 }
 
+/* ABOUT US */
+#about-us-banner {
+    background-image: url(images/banhmi-banner2-bw.jpg);
+    background-size: cover;
+}

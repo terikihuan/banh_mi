@@ -20,12 +20,12 @@ crossorigin="anonymous"></script>
 <body>
     <div class="page-container">
         
-        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" id="navbar">
-            <a href="index.html" class="navbar-brand"><img id="logo" src="./images/BanhMi_logo.png" alt=""></a>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+            <a href="index.html" class="navbar-brand"><img id="logo" src="./images/Banh_Mi_Kitchen_Logo_Transparent.png" alt=""></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-cont>
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex-sm justify-content-center" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="navbar-item">
                         <a href="menu.html" class="nav-link">Menu</a>
@@ -41,9 +41,27 @@ crossorigin="anonymous"></script>
         </nav>
 
         <main class="main">
+            <section class="hero-banner" id="contact-banner"></section>
             <div class="title-container">
-                <h1 class="title-heading">Contacts</h1>
+                <h1 class="title-heading">Contact</h1>
             </div>
+
+            <form action="">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" class="form-control" id="contact-name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="text" class="form-control" id="contact-email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="contact-msg">Message</label>
+                    <textarea class="form-control" id="contact-msg" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
         </main>
     </div>
 
