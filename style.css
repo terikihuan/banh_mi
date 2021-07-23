@@ -2,7 +2,9 @@
 :root {
     --sepia: #fffbd8;
     --dark: #2a2a2a;
-    --lightgrey: #8e8e8e;
+    --lightgrey: #acacac;
+    --brand:#878f4b;
+    --form-bg: #e6e3c5;
     font-size: 21px;
 }
 
@@ -19,8 +21,27 @@ main {
     padding: 6vh 0;
 }
 
+h1 {
+    font-family: 'DM Serif Display';
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'DM Serif Display';
+    font-size: 2rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 .hero-banner {
-    height: 400px;
+    background-image: url(images/sandwich-banner-transparent.png);
+    height: 300px;
     width: auto;
 }
 
@@ -46,16 +67,28 @@ main {
     margin: 0px 25px;
 }
 
+/* Page footer */
+.footer {
+    background-color: var(--dark);
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.footer-container {
+    color: var(--lightgrey);
+}
 
 /* Page's title */
 .title-container {
     padding: 2em 0px;
-    background-color: #858585;
+    background-color: var(--brand);
 }
 
 .title-heading {
     text-align: center;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 /* Hero section */
@@ -67,14 +100,8 @@ main {
 }
 
 .hero-text {
-    padding: 5vh 5vw 0vh 5vw;
+    padding: 2vh 5vw 0vh 5vw;
     width: 30em;
-    /* border: 2px solid red; */
-}
-
-.hero-header {
-    font-family: 'DM Serif Display';
-    font-size: 2.5rem;
 }
 
 .hero-para {
@@ -82,10 +109,16 @@ main {
     max-width: 400px;
 }
 
-#hero-img {
+.hero-img {
     width: 45vw;
     margin-left: 0vw;
+    margin-bottom: 1.5vh;
     max-width: 800px;
+    min-width: 250px;
+}
+
+.hero-img-div {
+    margin: 2vh 0;
 }
 
 .hero-contact {
@@ -118,23 +151,21 @@ main {
 }
 
 
-
-
-/* Page footer */
-.footer {
-    background-color: var(--dark);
-    height: auto;
-    width: 100%;
-    padding: 10px;
-    margin-top: auto;
+/* CONTACT FORM */
+.form-div {
+    margin: 5vh 5vw;
 }
-
-.footer-container {
-    color: var(--lightgrey);
+form {
+    padding: 5vh 5vw;
+    background-color: var(--form-bg);
+    box-shadow: 5px 10px 20px #999;
+}
+#form-btn {
+    background-color: var(--brand);
+    border: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin-left: auto;
+    font-weight: bold;
 }
 
 
@@ -144,6 +175,10 @@ main {
         font-size: 16px;
     }
     
+    .hero-banner {
+        background-size: contain;   
+    }
+
     .hero-section {
         flex-direction: column-reverse;
         justify-content: center;
@@ -151,13 +186,13 @@ main {
     }
     #hero-img {
         width: 50vw;
-        min-width: 200px;
+    
         flex: 1;
         padding: 0px;
         margin-top: -5vh;
     }
     .hero-text {
-        padding: 0px;
+        padding: 4vh 0 0 0;
         width: 80vw;
         font-size: 1rem;
         text-align: center;
@@ -188,10 +223,4 @@ main {
     .hero-banner {
         height: 200px;
     }
-}
-
-/* ABOUT US */
-#about-us-banner {
-    background-image: url(images/banhmi-banner2-bw.jpg);
-    background-size: cover;
 }
