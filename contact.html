@@ -25,13 +25,16 @@
     <div class="page-container">
         
         <!--NAVIGATION  -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <a href="index.html" class="navbar-brand"><img id="logo" src="./images/Banh_Mi_Kitchen_Logo_Transparent.png" alt=""></a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-cont>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
                     <li class="navbar-item">
                         <a href="menu.html" class="nav-link">Menu</a>
                     </li>
@@ -48,32 +51,41 @@
         <!-- MAIN -->
         <main class="main">
             <!-- BANNER -->
-            <section class="hero-banner"></section>
+            <div class="banner"></div>
+
+            <!-- TITLE -->
             <div class="title-container">
                 <h1 class="title-heading">Contact</h1>
             </div>
-
+            
             <!-- CONTENT -->
-            <div class="form-div">
-                <form action="">
-                    <div class="form-group">
-                        <h2>Leave us a message !</h2>
+            <div class="container-fluid">
+                <div class="row padding">
+                    <div class="col-12">
+                        <div class="form-div">
+                            <form action="">
+                                <div class="form-group">
+                                    <h2>Leave us a message !</h2>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-name">Name</label>
+                                    <input type="text" class="form-control" id="contact-name" placeholder="Enter name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email</label>
+                                    <input type="text" class="form-control" id="contact-email" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-msg">Message</label>
+                                    <textarea class="form-control" id="contact-msg" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="form-btn">Submit</button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="contact-name">Name</label>
-                        <input type="text" class="form-control" id="contact-name" placeholder="Enter name">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Email</label>
-                        <input type="text" class="form-control" id="contact-email" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-msg">Message</label>
-                        <textarea class="form-control" id="contact-msg" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="form-btn">Submit</button>
-                </form>
+                </div>
             </div>
+            
             
             
         </main>
@@ -81,8 +93,12 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-container center">
-            <div>Copyright&copy; 2020 BANH MI KITCHEN. All right reserved.</div>
+        <div class="container-fluid">
+            <div class="row text-center light-text">
+                <div class="col-12">
+                    <p>Copyright&copy; 2020 BANH MI KITCHEN. All right reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
     

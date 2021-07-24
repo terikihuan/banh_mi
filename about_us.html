@@ -22,58 +22,91 @@
         
     </head>
 <body>
-    <div class="page-container">
+    
         
-        <!-- NAVIGATION -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
-            <a href="index.html" class="navbar-brand"><img id="logo" src="./images/Banh_Mi_Kitchen_Logo_Transparent.png" alt=""></a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-cont>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="navbar-item">
-                        <a href="menu.html" class="nav-link">Menu</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="about_us.html" class="nav-link">About Us</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a href="index.html" class="navbar-brand"><img id="logo" src="./images/Banh_Mi_Kitchen_Logo_Transparent.png" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about_us.html" class="nav-link">About Us</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <!-- MAIN -->
-        <main class="main">
-            <!-- BANNER -->
-            <section class="hero-banner"></section>
-            <div class="title-container">
-                <h1 class="title-heading">About Us</h1>
-            </div>
+    <main>
+        <!-- BANNER -->
+        <div class="banner"></div>
 
-            <!-- CONTENT -->
-            <div class="hero-section">
-                <div class="hero-text">
-                    <h2 class="hero-header">BANH MI KITCHEN</h2>
-                    <p class="hero-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lorem nisi. Vivamus id mauris urna. Proin nec ligula vestibulum, maximus justo quis, suscipit nisl. Integer a eros in sapien posuere aliquam.</p>
+        <!-- TITLE -->
+        <div class="title-container">
+            <h1 class="title-heading">About Us</h1>
+        </div>
+
+        <!-- FOUNDER -->
+        <div class="container-fluid">
+            <div class="row padding founder dark-div">
+                <div class="col-lg-6">
+                    <div class="text-div ">
+                        <h2>Meet the founder</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ante mauris, commodo sed convallis ac, ultricies sed sem. 
+                            Maecenas nunc ex, suscipit nec gravida et, dapibus ornare sapien. Nullam convallis lacinia tellus, posuere pretium odio malesuada sit amet. 
+                        </p>
+                    </div>
                 </div>
-
-                <figure class="hero-img-div">
-                    <img class="hero-img" src="images/bmkc-store.jpg" alt="">
-                    <!-- <figcaption id="hero-img-caption" class="center">We got on newspaper !</figcaption> -->
-                </figure>
-
+                <div class="col-lg-6 img-div">
+                    <div class="img-div">
+                        <img class="hero-img" src="/images/founder-2.png" alt="">
+                    </div>
+                </div>
             </div>
-            
-        </main>
-    </div>
+        </div>
+
+        <!-- STORE -->
+        <div class="container-fluid">
+            <div class="row padding">
+                <div class="col-lg-6">
+                    <div class="text-div">
+                        <h2>Our Store</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id lorem nisi. Vivamus id mauris urna. 
+                        Proin nec ligula vestibulum, maximus justo quis, suscipit nisl. Integer a eros in sapien posuere aliquam.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-div">
+                        <img class="hero-img" src="images/bmkc-store.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+        
+    
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container center">
-            <div>Copyright&copy; 2020 BANH MI KITCHEN. All right reserved.</div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center light-text">
+                <div class="col-12">
+                    <p>Copyright&copy; 2020 BANH MI KITCHEN. All right reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
     

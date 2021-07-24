@@ -20,13 +20,17 @@ crossorigin="anonymous"></script>
 <body>
     <div class="page-container">
         
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <a href="index.html" class="navbar-brand"><img id="logo" src="./images/Banh_Mi_Kitchen_Logo_Transparent.png" alt=""></a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-cont>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
                     <li class="navbar-item">
                         <a href="menu.html" class="nav-link">Menu</a>
                     </li>
@@ -41,10 +45,15 @@ crossorigin="anonymous"></script>
         </nav>
 
 
-
         <main class="main">
+            
+
             <!-- BANNER -->
-            <section class="hero-banner"></section>
+            <div class="menu-banner">
+                <img src="images/menu-banner.png" alt="">
+            </div>
+
+            <!-- TITLE -->
             <div class="title-container">
                 <h1 class="title-heading">Menu</h1>
             </div>
@@ -55,13 +64,97 @@ crossorigin="anonymous"></script>
                 </div>
             </div>
             
+            <!-- CARDS -->
+            <div class="container-fluid">
+                <div class="row padding">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/banhmi-heoquay.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Banh Mi Name</h4>
+                                <p class="card-text">Banh Mi description</p>
+                                <a href="#"><button class="btn btn-outline-secondary">Order</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/banhmi-thitnuong.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Banh Mi Name</h4>
+                                <p class="card-text">Banh Mi description</p>
+                                <a href="#"><button class="btn btn-outline-secondary">Order</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/banhmi-bonuong.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Banh Mi Name</h4>
+                                <p class="card-text">Banh Mi description</p>
+                                <a href="#"><button class="btn btn-outline-secondary">Order</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/banhmi-chalua.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Banh Mi Name</h4>
+                                <p class="card-text">Banh Mi description</p>
+                                <a href="#"><button class="btn btn-outline-secondary">Order</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/banhmi-cangu.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Banh Mi Name</h4>
+                                <p class="card-text">Banh Mi description</p>
+                                <a href="#"><button class="btn btn-outline-secondary">Order</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/banhmi-xiumai.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Banh Mi Name</h4>
+                                <p class="card-text">Banh Mi description</p>
+                                <a href="#"><button class="btn btn-outline-secondary">Order</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
         </main>
     </div>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-container center">
-            <div>Copyright&copy; 2020 BANH MI KITCHEN. All right reserved.</div>
+        <div class="container-fluid">
+            <div class="row text-center light-text">
+                <div class="col-12">
+                    <p>Copyright&copy; 2020 BANH MI KITCHEN. All right reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
     

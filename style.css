@@ -3,84 +3,118 @@
     --sepia: #fffbd8;
     --dark: #2a2a2a;
     --lightgrey: #acacac;
-    --brand:#878f4b;
+    --brand:#ffbe4b;
     --form-bg: #e6e3c5;
+    --yellow: #ffbe4b;
+    --banner-bg: #6f5f30;
     font-size: 21px;
 }
 
 html, body {
     box-sizing: border-box;
     background-color: var(--sepia);
+    color: var(--dark);
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
-
-main {
-    padding: 6vh 0;
-}
-
 h1 {
     font-family: 'DM Serif Display';
     font-size: 2.5rem;
 }
-
 h2 {
     font-family: 'DM Serif Display';
     font-size: 2rem;
 }
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+a {
+    color: var(--dark);
+}
+a:hover {
+    color: var(--dark);
+    text-decoration: underline;
+}
+main {
+    margin-top: 6vh;
+    padding-bottom: 2rem;
 }
 
 
-.hero-banner {
-    background-image: url(images/sandwich-banner-transparent.png);
-    height: 300px;
-    width: auto;
+/* Ultility */
+.light-text {
+    color: var(--lightgrey)
+}
+.padding {
+    padding: 5vh 5vw;
+}
+.text-div {
+    padding: 5vw;
+}
+.btn-outline-primary {
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    border-radius: 20px;
+}
+.btn-outline-primary:hover {
+    background-color: var(--yellow);
+    color: var(--dark);
+    border: 2px solid var(--dark);
+}
+.dark-div {
+    background-color: var(--dark);
+    color: white;
 }
 
 
-/* Navigation */
+/* NAVIGATION */
 #logo {
     height: 6vh;
     min-width: 80px;
     position: relative;
 }
-
-#navbar {
+.navbar {
     padding: 0px 50px;
     background: var(--dark);
 }
-
-#navbarSupportedContent > ul{
-    margin-left: auto;
+.navbar-nav a {
+    color: var(--lightgrey);
 }
-
-
 .nav-link {
     margin: 0px 25px;
 }
 
-/* Page footer */
-.footer {
+
+/* FOOTER */
+footer {
     background-color: var(--dark);
     height: auto;
-    width: 100%;
+    width: auto;
     padding: 10px;
     margin-top: auto;
 }
 
-.footer-container {
-    color: var(--lightgrey);
+
+/* BANNER */
+.banner {
+    background-image: url(images/sandwich-banner-transparent.png);
+    height: 300px;
+}
+.menu-banner {
+    background-color: var(--banner-bg);
+}
+.menu-banner img{
+    width: 100%;
+    max-width: 1000px;      
+    display: block;
+    margin: auto;
 }
 
-/* Page's title */
+
+/* PAGE TITLE */
 .title-container {
     padding: 2em 0px;
     background-color: var(--brand);
@@ -88,27 +122,12 @@ h2 {
 
 .title-heading {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: var(--dark);
 }
 
-/* Hero section */
-.hero-section {
-    display: flex;
-    padding: 9vh 5vw;
-    height: auto;
-    justify-content: center;
-}
 
-.hero-text {
-    padding: 2vh 5vw 0vh 5vw;
-    width: 30em;
-}
 
-.hero-para {
-    margin-top: 5vh;
-    max-width: 400px;
-}
-
+/* Hero section (Homepage) */
 .hero-img {
     width: 45vw;
     margin-left: 0vw;
@@ -117,41 +136,40 @@ h2 {
     min-width: 250px;
 }
 
-.hero-img-div {
-    margin: 2vh 0;
-}
 
 .hero-contact {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
-
 #social-media {
     margin-top: 5px;
 }
-
 #menu-btn {
     margin-top: 3vh;
     margin-bottom: 2vh;
     border: 2px solid var(--dark);
     border-radius: 20px;
     background: transparent;
-    width: 15vw;
 }
-
+/* Social Media */
 #social-media {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 2.5rem;
+}
+#social-media a{
+    font-size: 2rem;
+}
+#social-media i {
+    color: var(--dark);
+}
+#social-media i:hover {
+    color: var(--lightgrey);
 }
 
-.social-media-icon {
-    width: 2vw;
-}
 
-
-/* CONTACT FORM */
+/* Contact Form (Contact Page)*/
 .form-div {
     margin: 5vh 5vw;
 }
@@ -162,65 +180,89 @@ form {
 }
 #form-btn {
     background-color: var(--brand);
+    color: var(--dark);
     border: hidden;
     display: flex;
     margin-left: auto;
     font-weight: bold;
 }
 
+/* Carousel (Homepage) */
+.carousel-inner {
+    background-color: var(--banner-bg);
+}
+.carousel-inner img {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Divider (Homepage) */
+.divider {
+    background-color: var(--yellow);
+}
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 769px) {
+
+
+@media screen and (max-width: 990px) {
     :root {
         font-size: 16px;
     }
     
-    .hero-banner {
+    /* DIVIDER */
+    .lead {
+        font-size: 16px;
+    }
+
+    /* BANNER */
+    .banner {
         background-size: contain;   
     }
-
-    .hero-section {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    #hero-img {
-        width: 50vw;
     
-        flex: 1;
-        padding: 0px;
-        margin-top: -5vh;
-    }
-    .hero-text {
-        padding: 4vh 0 0 0;
-        width: 80vw;
-        font-size: 1rem;
-        text-align: center;
+
+    /* Change layout from horizontal to vertical */
+    .hero {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse;
     }
-    .hero-header {
-        font-size: 2rem;
+    .text-div {
+        padding: 0 10vw;
+        text-align: center;
     }
-    .hero-para {
-        max-width: 300px;
-    }
-    #menu-btn {
-        width: 120px;
-        margin: 0vh;
+    .img-div {
+        display: grid;
+        place-items: center;
     }
 
+    /* Social media */
     #social-media {
         margin-top: 15px;
         justify-content: center;
     }
-
     .social-media-icon {
         width: 25px;
     }
 
-    .hero-banner {
-        height: 200px;
+}
+
+@media screen and (max-width: 576px) {
+    .padding {
+        padding: 0 1vw;
+        padding-top: 5vh;
     }
+    main {
+        padding-top: 20px;
+    }
+    /* NAVBAR */
+    .navbar {
+        padding: 7px;
+    }
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
 }
